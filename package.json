@@ -1,0 +1,37 @@
+{
+  "name": "eliceII_sql",
+  "version": "1.0.0",
+  "description": "✍️ 엘리스 2차 프로젝트 firebase(nosql) 를 supabase(sql) 로 전환",
+  "main": "index.js",
+  "repository": "https://github.com/toris-dev/eliceII_sql.git",
+  "author": "toris <ironjustlikethat@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --exec babel-node ./src/app.js",
+    "build": "babel src -d dist",
+    "start": "node ./dist/app.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/node": "^7.23.9",
+    "@supabase/supabase-js": "^2.42.4",
+    "axios": "^1.6.8",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "env-var": "^7.4.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "uuid4": "^2.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/preset-env": "^7.24.4",
+    "eslint": "^9.0.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.2.5",
+    "prisma": "^5.12.1"
+  }
+}

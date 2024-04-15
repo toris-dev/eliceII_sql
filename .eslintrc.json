@@ -1,0 +1,20 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["airbnb-base", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": "off",
+    "import/no-extraneous-dependencies": 0, // 테스트 또는 개발환경을 구성하는 파일에서는 devDependency 사용을 허용
+    "eslint-plugin-import/no-unresolved": "off",
+    "consistent-return": "off",
+    "import/prefer-default-export": "off",
+    "class-methods-use-this": "off"
+  },
+  "ignorePatterns": ["./build/**"]
+}
